@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+margin:0;  
+padding:0;
+box-sizing:border-box;
+}   
+
+body{
+background:#131418;  
+font-family: 'poppins', sans-serif;
+}
+
+.container{
+padding:20px;
+padding-bottom:30px;
+background:white;
+border-radius:7px;
+width:350px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+overflow:hidden;
+}
+
+.container .search-box{
+height:40px; 
+display:flex;
+align-items:center;
+}
+
+.container .search-box input{
+all:unset;  
+height:40px;
+width:100%;
+padding-left:40px;
+padding-right:10px;
+border:1px solid grey;
+border-radius:30px;
+font-size:15px;
+}
+
+.container .search-box input::placeholder{
+font-size:14px;        
+}
+
+.container .fa-magnifying-glass{
+color:grey;  
+font-size:16px;
+position:absolute;
+left:35px;
+}
+
+.container .displaying-message{
+text-align:center;
+margin-top:30px;
+font-size:14px;
+color:grey;
+margin-left:50px;
+position:relative;
+top:14px;
+}
+
+.container .meal-image{
+height:150px; 
+width:150px;
+background:red;
+border-radius:100%;
+margin-top:15px;
+position:absolute;
+left:50%;
+transform:translate(-50%,-50%);
+margin-top:90px;
+}
+
+.container .meal-image img{
+height:100%;   
+width:100%;
+border-radius:100%;
+}
+
+.container .view-recipe-btn{
+all:unset;       
+margin-top:220px;
+background:white;
+border:1px solid #D83F41;
+border-radius:30px;
+color:#D83F41;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:6px;
+font-size:13px;
+padding-left:10px;
+padding-right:10px;
+float:right;
+cursor:pointer;
+}
+
+.container .meal-details{
+width:200px;
+border-radius:30px;
+font-size:14px;
+background:#D83F41;  
+text-align:center;
+padding:7px;
+position:absolute;
+left:50%;
+transform:translate(-50%,-50%);
+margin-top:170px;
+background:white;
+border:1px solid #D83F41;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.container .meal-name{
+font-weight:600;
+color:#D83F41;
+}
+
+.container .meal-area{
+color:#708090;  
+color:grey;
+}
+
+.container .ingredients-box{
+position:relative;
+top:205px;
+}
+
+.container .ingredients-box ul{
+display:grid; 
+grid-template-columns:auto auto;
+gap:0.8em 1.1em;
+padding:1.2em 0 0 1.2em;
+font-size:1em;
+}
+
+.container .ingredients-box li{
+font-size:12px;       
+}
+
+.container .recipe-box{
+position:absolute; 
+top:0;
+left:0;
+background:white;
+height:100%;
+width:100%;
+border-radius:7px;
+padding:25px;
+left:-100%;
+transition:all .2s;
+overflow-y:scroll;
+}
+
+.container .recipe-box .close-btn{
+height:35px; 
+width:35px;
+background:white;
+border:1px solid #D83F41;
+color:#D83F41;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:100%;
+float:right;
+cursor:pointer;
+}
+
+.container .recipe-box .close-btn:hover,.container .view-recipe-btn:hover{
+background:#D83F41;
+transition:all .2s;
+color:white;
+}
+
+.container .recipe-box .Instructions{
+position:relative;     
+top:5px;
+font-size:1em;
+white-space:pre-wrap;
+word-wrap:break-word;
+font-family: 'poppins', sans-serif;
+                    }
